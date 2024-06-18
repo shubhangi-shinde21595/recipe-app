@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 2rem;
+  perspective: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.slider img {
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+}
+.slider img:hover {
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+.img {
+  perspective: 800px;
+}
+.img img {
+  border-radius: 5%;
+  border: 2px solid rgb(87, 87, 165);
+  transition: transform 0.3s ease;
+}
+.img img:hover {
+  transform: translateZ(100px);
+  border: 2px solid yellow;
+}
+Link a {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.navbar-brand {
+  font-size: 50px;
+  font-weight: 500;
+}
+.nav-link {
+  font-size: 20px;
+  color: white !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .recipe-details {
+    display: block !important;
   }
-  to {
-    transform: rotate(360deg);
+  .content {
+    width: auto !important;
   }
 }
